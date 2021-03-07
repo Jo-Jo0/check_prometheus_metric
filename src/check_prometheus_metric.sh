@@ -10,6 +10,7 @@ NAN_OK="false"
 NAGIOS_INFO="false"
 PERFDATA="false"
 PROMETHEUS_QUERY_TYPE=""
+DIRNAME=$(dirname "$0")
 
 # Constants
 #----------
@@ -25,9 +26,9 @@ NAGIOS_SHORT_TEXT='an unknown error occured'
 NAGIOS_LONG_TEXT=''
 
 # Includes
-source preamble.bash
-source parse.bash
-source usage.bash
+source $DIRNAME/preamble.bash
+source $DIRNAME/parse.bash
+source $DIRNAME/usage.bash
 
 # Main
 
